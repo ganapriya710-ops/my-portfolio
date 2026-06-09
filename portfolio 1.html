@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ganapriya Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    backgroun:black;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#4a90e2;
+    color:black;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+h2{
+    text-align:center;
+    color:#4a90e2;
+    margin-bottom:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* Heading Blink Effect */
+h2:hover{
+    animation:blink 0.8s infinite;
+    text-shadow:0 0 10px #4a90e2,
+                0 0 20px #4a90e2,
+                0 0 30px #4a90e2;
+}
+
+@keyframes blink{
+    0%{opacity:1;}
+    50%{opacity:0.4;}
+    100%{opacity:1;}
+}
+
+/* About Section */
+.about{
+    text-align:center;
+}
+
+.about img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #4a90e2;
+    margin-bottom:20px;
+}
+
+/* Skills Section */
+.skills ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    list-style:none;
+}
+
+.skills li{
+    background:#4a90e2;
+    color:white;
+    padding:10px 20px;
+    margin:10px;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.skills li:hover{
+    animation:blink 0.8s infinite;
+    transform:scale(1.1);
+    box-shadow:0 0 10px #4a90e2,
+               0 0 20px #4a90e2,
+               0 0 30px #4a90e2;
+}
+
+/* Projects */
+.projects{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.project-card{
+    background:white;
+    width:300px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}
+
+.project-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.project-card h3{
+    padding:10px;
+}
+
+.project-card p{
+    padding:0 10px 15px;
+}
+
+/* Resume */
+.resume{
+    text-align:center;
+}
+
+.resume a{
+    display:inline-block;
+    background:#4a90e2;
+    color:black;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.resume a:hover{
+    background:#357abd;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+/* Footer */
+footer{
+    background:#333;
+    color:black;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Ganapriya</h1>
+    <p>Web Developer | Student | Creative Designer</p>
+</header>
+
+<section class="about">
+    <h2>About Me</h2>
+
+    <!-- Replace profile.jpg with your image file name -->
+    <img src="lakshmi.jpeg" alt="Ganapriya">
+
+    <p>
+        Hello! I am Ganapriya, a passionate web development student.
+        I enjoy creating responsive websites using HTML, CSS, and JavaScript.
+        I love learning new technologies and building creative projects.
+    </p>
+</section>
+
+<section class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>SQL</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio website created using HTML and CSS.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Calculator App</h3>
+            <p>Simple calculator developed using JavaScript.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Student Management System</h3>
+            <p>Student data management project using Java and SQL.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="resume">
+    <h2>Resume</h2>
+    <a href="Ganapriya_resume" download>Download Resume</a>
+</section>
+
+<section class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: ganapriya710@gmail.com</p>
+    <p>Phone: 9391506952</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Ganapriya. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+  
